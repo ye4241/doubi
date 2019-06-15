@@ -868,7 +868,7 @@ JQ_install(){
 	JQ_ver=`jq -V`
 	if [[ -z ${JQ_ver} ]]; then
 		#wget --no-check-certificate -N "https://softs.pw/Bash/other/jq-1.5.tar.gz"
-		wget --no-check-certificate -N "https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/other/jq-1.5.tar.gz"
+		wget --no-check-certificate -N "https://raw.githubusercontent.com/ye4241/doubi/master/other/jq-1.5.tar.gz"
 		tar -xzf jq-1.5.tar.gz && cd jq-1.5
 		./configure --disable-maintainer-mode && make && make install
 		ldconfig
