@@ -949,8 +949,6 @@ Install_SSR(){
 	Save_iptables
 	echo -e "${Info} 所有步骤 安装完毕，开始启动 ShadowsocksR服务端..."
 	Start_SSR
-	Get_User_info "${ssr_port}"
-	View_User_info
 }
 Update_SSR(){
 	SSR_installation_status
