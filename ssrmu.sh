@@ -933,7 +933,6 @@ Install_SSR(){
 	[[ -e ${ssr_folder} ]] && echo -e "${Error} ShadowsocksR 文件夹已存在，请检查( 如安装失败或者存在旧版本，请先卸载 ) !" && exit 1
 	echo -e "${Info} 开始设置 ShadowsocksR账号配置..."
 	Set_user_api_server_pub_addr
-	Set_config_all
 	echo -e "${Info} 开始安装/配置 ShadowsocksR依赖..."
 	Installation_dependency
 	echo -e "${Info} 开始下载/安装 ShadowsocksR文件..."
@@ -942,8 +941,6 @@ Install_SSR(){
 	Service_SSR
 	echo -e "${Info} 开始下载/安装 JSNO解析器 JQ..."
 	JQ_install
-	echo -e "${Info} 开始添加初始用户..."
-	Add_port_user "install"
 	echo -e "${Info} 开始设置 iptables防火墙..."
 	Set_iptables
 	echo -e "${Info} 开始添加 iptables防火墙规则..."
